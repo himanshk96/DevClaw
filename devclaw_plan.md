@@ -1,8 +1,9 @@
 # DevClaw — Product Plan
 
 > **DevClaw** is an AI-powered multi-agent engineering tool built on OpenManus.
-> It has two modes: **`--que`** (default) for conversational knowledge and debugging,
-> and **`--run`** for autonomous code implementation and PR creation.
+> It has two modes: **`--que`** (default) — question mode for conversational repo knowledge,
+> onboarding, architecture exploration, and debugging — and **`--run`** for autonomous
+> code implementation and PR creation.
 > Both modes share the same repo memory, config, and agent infrastructure.
 > **`--run` mode never touches `main` or any default branch. Ever.**
 
@@ -291,13 +292,13 @@ python run_devclaw.py "what would break if I changed the token expiry?" \
 ```bash
 python run_devclaw.py --interactive --repos backend-api frontend
 
-# DevClaw Queue > how does auth work?
+# DevClaw Question > how does auth work?
 # [answer...]
 #
-# DevClaw Queue > what about mobile clients?
+# DevClaw Question > what about mobile clients?
 # [contextual answer building on previous...]
 #
-# DevClaw Queue > exit
+# DevClaw Question > exit
 # Session saved: que-a1b2c3
 ```
 
